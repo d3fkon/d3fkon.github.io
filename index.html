@@ -1,9 +1,43 @@
-<h1>
-  This is for them screenshots
-</h1>
+<div id="capture" style="padding: 10px; background: #f5da55">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
-<h2>
-  Imma take dis screenshot
-</h2>
+    <h1>
+        This will take them screenshots
+    </h1>
+    <h2>
+        Spam
+    </h2>
+    <h2>
+        Spam
+    </h2>
+    <h2>
+        Spam
+    </h2>
+    <h2>
+        Spam
+    </h2>
 
-<button id="ss">Name</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <button id="ss">Take Screenshot!</button>
+
+    <hr>
+
+</div>
+<h3>Your screenshot will be displayed below!</h3>
+<hr>
+<script>
+
+    document.getElementById('ss').addEventListener('click', function () {
+        html2canvas(document.querySelector("#capture")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+
+    })
+
+
+</script>
