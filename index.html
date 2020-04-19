@@ -1,43 +1,298 @@
-<div id="capture" style="padding: 10px; background: #f5da55">
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<!DOCTYPE html>
+<html>
 
-    <h1>
-        This will take them screenshots
-    </h1>
-    <h2>
-        Spam
-    </h2>
-    <h2>
-        Spam
-    </h2>
-    <h2>
-        Spam
-    </h2>
-    <h2>
-        Spam
-    </h2>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flutter Workshop</title>
+    <style>
+        body {
+            background-image: url("https://miro.medium.com/max/3840/1*6LE29zkQqh35ZruHGumcfQ@2x.jpeg");
+            background-size: 100%;
+            background-attachment: fixed;
+        }
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+        .wrap-element {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
 
-    <button id="ss">Take Screenshot!</button>
+        .wrapped-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
 
-    <hr>
+<body>
+    <center>
+        <p class='blue-text' style='font-family:sans-serif ;font-size:40px'>Flutter Workshop</p>
+    </center>
+    <div class="row">
+        <div class="col s12 m12 l6 xl6">
+            <div class="card-panel">
+                <center>
+                    <h5>CREATED BY</h5>
+                </center>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card grey lighten-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Ashwin Prasad A</span>
+                                <p>1AY16IS027<br />
+                                    Department of ISE<br />
+                                    Acharya Institute of Technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card grey lighten-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Bharath Karanth A</span>
+                                <p>1AY16IS032<br />
+                                    Department of ISE<br />
+                                    Acharya Institute of Technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l6 xl6">
+            <div class="card-panel">
+                <center>
+                    <h5>CO-ORDINATED BY</h5>
+                </center>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card grey lighten-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Prof. Chayapathi A R</span>
+                                <p>Assistant Professor<br />
+                                    Department of ISE<br />
+                                    Acharya Institute of Technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card grey lighten-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Prof. Subhash Kamble</span>
+                                <p>Assistant Professor<br />
+                                    Department of ISE<br />
+                                    Acharya Institute of Technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <center>
+            <h5>GUIDED BY</h5>
+        </center>
+        <div class="row">
+            <div class="col s2 l4">
+            </div>
+            <div class="col s8 l4">
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <span class="card-title">Prof. C.K. Marigowda</span>
+                        <p>Associate Professor & Head <br />
+                            Department of ISE<br />
+                            Acharya Institute of Technology
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s2 l4">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s1 l2"></div>
+        <div class="col s10 l8">
+            <div class="card-panel">
+                <center>
+                    <h5>DESCRIPTION</h5>
+                </center>
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <!-- <span class="card-title">Prof. C.K. Marigowda</span> -->
+                        <p class="card-title">Introduction to Mobile Application Development, using Flutter” is a
+                            hands-on workshop which
+                            teaches the students to think about any software problem from a mobile developer standpoint
+                            and
+                            gives them the tools to develop a solution using Google’s latest mobile application
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s1 l8"></div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l6 xl6">
+            <div class="card-panel ">
+                <center>
+                    <h5>COURSE CONTENT</h5>
+                </center>
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <span class="card-title"></span>
+                        <ol class="card-title">
+                            <li>Introduction to the data-flow on the internet</li>
+                            <li>Introduction to the simplicity of the dart language</li>
+                            <li>Widgets. Text, Containers, Columns, Rows, Lists</li>
+                            <li>Navigation and types of navigation</li>
+                            <li>State Management</li>
+                            <li>Making http requests and concluding with a sample application</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l6 xl6">
+            <div class="card-panel ">
+                <center>
+                    <h5>Requirements</h5>
+                </center>
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <ol class="card-title">
+                            <li>Internet Connection</li>
+                            <li>Desktop/Laptop</li>
 
-</div>
-<h3>Your screenshot will be displayed below!</h3>
-<hr>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l6 xl6">
+            <div class="card-panel ">
+                <center>
+                    <h5>WHAT YOU'LL LEARN</h5>
+                </center>
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <span class="card-title"></span>
+                        <p class="card-title">The students will have built the mindset to understand and breakdown how
+                            most modern day
+                            mobile applications work, and how uncomplicated the process of mobile development is
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l6 l6">
+            <div class="card-panel ">
+                <center>
+                    <h5>Videos</h5>
+                </center>
+                <div class="card grey lighten-3">
+                    <div class="card-content black-text">
+                        <ol class="card-title">
+                            <li>Video - 1 <a href="#video1">Click here</a></li>
+                            <li>Video- 2 <a href="#video2">Click here</a></li>
+                            <li>Video - 3 <a href="#video3">Click Here</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="video1" class="modal">
+        <div class="modal-content">
+
+            <center>
+                <h4>Introduction and Basics</h4>
+                <div class="wrap-element">
+                    <iframe class='wrapped-iframe' src="https://www.youtube.com/embed/RIx-HkfQxTc"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </center>
+            <div class="modal-footer">
+                    Description for Video 1 is coming soon
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="video2" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Video 2 Dynamic Lists</h4>
+                <div class="wrap-element">
+
+                    <iframe class='wrapped-iframe' src="https://www.youtube.com/embed/n81-w-L269A" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </center>
+            <div class="modal-footer">
+                Description for Video 2 is coming soon
+            </div>
+        </div>
+    </div>
+
+    <div id="video3" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Video 3 </h4>
+                <div class="wrap-element">
+                    <iframe class="wrapped-iframe" src="https://www.youtube.com/embed/dFQcxFQxSAU" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </center>
+            <div class="modal-footer">
+                Description for Video 3 is coming soon
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer grey lighten-3">
+        <div class="footer-copyright grey lighten-3  ">
+            <div class="container black-text" style="font-size: large;">
+                Real World Mobile Applications.
+                Introduction
+                WORKSHOP, <br />
+                Copyright © 2020
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script>
+    $(document).ready(function () {
 
-    document.getElementById('ss').addEventListener('click', function () {
-        html2canvas(document.querySelector("#capture")).then(canvas => {
-            document.body.appendChild(canvas)
-        });
-
-    })
+        // Init Modal
+        $('.modal').modal();
 
 
+    });
 </script>
+</body>
+
+</html>
